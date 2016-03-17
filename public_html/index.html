@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Importation Excel</h2>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="nom">Nom du projet</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="nom" placeholder="Entrez le nom du projet">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="strat">Stratégie de mesure</label>
+                        <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="strat" placeholder="Entrez la stratégie de mesure">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="utilisateur">Utilisateurs fonctionnels</label>
+                        <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="utilisateur" placeholder="Entrez les utilisateurs fonctionnels séparés par une virgule">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="granu">Niveau de granularité</label>
+                        <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="granu" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="decom">Niveau de décomposition</label>
+                        <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="decom" placeholder="">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="form-group">        
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Importer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="decom">Changement</label>
+                    <nav>
+                        <ul>
+                            <li>- SELECT -
+                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"></ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
